@@ -6,14 +6,82 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    var _player:AVPlayer?
+    var _playerItem:AVPlayerItem?
+    var _playerLayer:AVPlayerLayer!
+    let _videoView = UIView()
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        _videoView.frame = CGRect(x: 0, y: 0, width:super.view.frame.size.width, height: super.view.frame.size.height)
+        self.view.addSubview(_videoView)
+        NotificationCenter.default.addObserver(self, selector: #selector(playerDone), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object:_player?.currentItem)
     }
 
-
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(false)
+        loadVideo()
+    }
+    
+//    private func updateVideoInfo()->(Double)
+//    {
+//        // 抓取 playerItem 的 duration
+//        let duration = _playerItem!.asset.duration
+//        // 把 duration 轉為影片的總時間（秒數）。
+//        let seconds = CMTimeGetSeconds(duration)
+//        return seconds
+//    }
+    
+    private func loadVideo()
+    {
+        // to prevent background music stop
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.ambient)
+        } catch  {}
+        
+        let videoPath = Bundle.main.path(forResource: "flyVideo", ofType: "mp4")
+        
+        _player = AVPlayer(url: URL(fileURLWithPath: videoPath!))
+        
+        _playerLayer = AVPlayerLayer(player: _player)
+        
+        _playerLayer.frame = view.bounds
+        _playerLayer.videoGravity = .resize
+        _videoView.layer.addSublayer(_playerLayer)
+        
+        self._player!.play()
+    }
+    
+    @objc private func playerDone()
+    {
+        UIView.animate(withDuration: 1.5) {
+            let Xsize = self.view.frame.size.width * 3
+            let diffx = Xsize - self.view.frame.size.width
+            let diffy = self.view.frame.size.height - Xsize
+            self._playerLayer.frame = CGRect(x: -(diffx/2), y: diffy/2, width: Xsize, height: Xsize)
+            self._videoView.alpha = 0.5
+        }
+        
+        UIView.animate(withDuration: 1.5) {
+            self._videoView.alpha = 0
+        } completion: { done in
+            if done {
+                DispatchQueue.main.async {
+                    
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "Home")
+                    newViewController.modalTransitionStyle = .crossDissolve
+                    newViewController.modalPresentationStyle = .fullScreen
+                    self.present(newViewController, animated: true, completion: nil)
+                }
+            }
+        }
+    }
 }
 

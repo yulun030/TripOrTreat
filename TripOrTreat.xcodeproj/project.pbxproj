@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632BB6A4271C253300DBF54E /* flyVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 632BB6A3271C253300DBF54E /* flyVideo.mp4 */; };
+		632BB6A6271C342A00DBF54E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632BB6A5271C342A00DBF54E /* HomeViewController.swift */; };
 		6373224426DB7FF6003BC9CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373224326DB7FF6003BC9CC /* AppDelegate.swift */; };
 		6373224626DB7FF6003BC9CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373224526DB7FF6003BC9CC /* SceneDelegate.swift */; };
 		6373224826DB7FF6003BC9CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373224726DB7FF6003BC9CC /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		632BB6A3271C253300DBF54E /* flyVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = flyVideo.mp4; sourceTree = SOURCE_ROOT; };
+		632BB6A5271C342A00DBF54E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6373224026DB7FF6003BC9CC /* TripOrTreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripOrTreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6373224326DB7FF6003BC9CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6373224526DB7FF6003BC9CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +106,9 @@
 				6373224326DB7FF6003BC9CC /* AppDelegate.swift */,
 				6373224526DB7FF6003BC9CC /* SceneDelegate.swift */,
 				6373224726DB7FF6003BC9CC /* ViewController.swift */,
+				632BB6A3271C253300DBF54E /* flyVideo.mp4 */,
 				6373224926DB7FF6003BC9CC /* Main.storyboard */,
+				632BB6A5271C342A00DBF54E /* HomeViewController.swift */,
 				6373224C26DB7FF8003BC9CC /* Assets.xcassets */,
 				6373224E26DB7FF8003BC9CC /* LaunchScreen.storyboard */,
 				6373225126DB7FF8003BC9CC /* Info.plist */,
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6373225026DB7FF8003BC9CC /* LaunchScreen.storyboard in Resources */,
+				632BB6A4271C253300DBF54E /* flyVideo.mp4 in Resources */,
 				6373224D26DB7FF8003BC9CC /* Assets.xcassets in Resources */,
 				6373224B26DB7FF6003BC9CC /* Main.storyboard in Resources */,
 			);
@@ -261,6 +268,7 @@
 				6373224826DB7FF6003BC9CC /* ViewController.swift in Sources */,
 				6373224426DB7FF6003BC9CC /* AppDelegate.swift in Sources */,
 				6373224626DB7FF6003BC9CC /* SceneDelegate.swift in Sources */,
+				632BB6A6271C342A00DBF54E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
