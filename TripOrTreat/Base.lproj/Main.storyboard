@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="51" y="70"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Item-->
         <scene sceneID="7AZ-2D-iuf">
             <objects>
                 <viewController storyboardIdentifier="Home" id="2ku-bc-BKI" customClass="HomeViewController" customModule="TripOrTreat" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,10 +45,28 @@
                             <constraint firstItem="uzH-87-nbc" firstAttribute="centerY" secondItem="L2u-Du-3Gg" secondAttribute="centerY" id="sHh-ic-Gio"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="oMx-Po-cMw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXb-0x-b6U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="70"/>
+            <point key="canvasLocation" x="1715.9420289855075" y="69.642857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="df8-DR-ghH">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ADn-kg-cjz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iyM-dc-MCT">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2ku-bc-BKI" kind="relationship" relationship="viewControllers" id="9SK-B6-bko"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vcs-sT-cd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.79710144927537" y="69.642857142857139"/>
         </scene>
     </scenes>
     <resources>

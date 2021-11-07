@@ -26,17 +26,8 @@ class ViewController: UIViewController
     override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(false)
-        loadVideo()
+//        loadVideo()
     }
-    
-//    private func updateVideoInfo()->(Double)
-//    {
-//        // 抓取 playerItem 的 duration
-//        let duration = _playerItem!.asset.duration
-//        // 把 duration 轉為影片的總時間（秒數）。
-//        let seconds = CMTimeGetSeconds(duration)
-//        return seconds
-//    }
     
     private func loadVideo()
     {
@@ -58,7 +49,7 @@ class ViewController: UIViewController
         self._player!.play()
     }
     
-    @objc private func playerDone()
+    func animate()
     {
         UIView.animate(withDuration: 1.5) {
             let Xsize = self.view.frame.size.width * 3
@@ -72,15 +63,22 @@ class ViewController: UIViewController
             self._videoView.alpha = 0
         } completion: { done in
             if done {
-                DispatchQueue.main.async {
-                    
-                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "Home")
-                    newViewController.modalTransitionStyle = .crossDissolve
-                    newViewController.modalPresentationStyle = .fullScreen
-                    self.present(newViewController, animated: true, completion: nil)
-                }
+                
             }
+        }
+        DispatchQueue.main.async {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "Home")
+            newViewController.modalTransitionStyle = .crossDissolve
+            newViewController.modalPresentationStyle = .fullScreen
+            self.present(newViewController, animated: true, completion: nil)
+        }
+    }
+    @objc private func playerDone()
+    {
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.2)
+        {
+            self.animate()
         }
     }
 }

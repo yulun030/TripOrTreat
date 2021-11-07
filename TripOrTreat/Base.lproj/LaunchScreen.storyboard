@@ -16,17 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flyImg" translatesAutoresizingMaskIntoConstraints="NO" id="ceX-xl-1er">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Da0-8o-jU8">
+                                <rect key="frame" x="32" y="273" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="QiQ-yz-649"/>
+                                    <constraint firstAttribute="height" constant="350" id="hKH-Cx-awc"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ceX-xl-1er" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="0Hd-6l-GgE"/>
-                            <constraint firstAttribute="bottom" secondItem="ceX-xl-1er" secondAttribute="bottom" id="Zae-LV-qe1"/>
-                            <constraint firstItem="ceX-xl-1er" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="auz-cl-tuZ"/>
-                            <constraint firstAttribute="trailing" secondItem="ceX-xl-1er" secondAttribute="trailing" id="dow-7q-ar2"/>
+                            <constraint firstItem="Da0-8o-jU8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Rma-bv-NFt"/>
+                            <constraint firstItem="Da0-8o-jU8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rIN-so-MEc"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flyImg" width="341" height="341"/>
+        <image name="Logo" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
