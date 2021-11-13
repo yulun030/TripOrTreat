@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "flyImg.png",
+      "filename" : "Share.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "flyImg@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "flyImg@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

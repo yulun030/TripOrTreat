@@ -1,17 +1,19 @@
 //
-//  HomeViewController.swift
+//  SettingViewController.swift
 //  TripOrTreat
 //
-//  Created by 綸綸 on 2021/10/17.
+//  Created by 綸綸 on 2021/11/13.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class SettingViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+
         // Do any additional setup after loading the view.
     }
     

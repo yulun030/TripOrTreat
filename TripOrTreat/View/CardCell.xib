@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="243" id="KGk-i7-Jjw" customClass="CardCell" customModule="TripOrTreat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="186"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwi-gg-Ycu">
+                        <rect key="frame" x="17" y="8" width="304" height="170"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip OR Treat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v76-ve-wcJ">
+                                <rect key="frame" x="104" y="76" width="96" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日期:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3j-lx-dkG">
+                                <rect key="frame" x="10" y="127" width="35" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6hE-Nu-oX9">
+                                <rect key="frame" x="241" y="10" width="53" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xf-Br-6vR">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" backgroundImage="Fav"/>
+                                        <state key="selected" backgroundImage="Fav-choose">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="favClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YTN-v0-5EN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSv-Ar-RA6">
+                                        <rect key="frame" x="29" y="0.0" width="24" height="24"/>
+                                        <state key="normal" backgroundImage="Share"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021/12/25-2021/12/31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osM-AV-h3g">
+                                <rect key="frame" x="50" y="127" width="156.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="1F2-d3-vec"/>
+                            <constraint firstItem="6hE-Nu-oX9" firstAttribute="top" secondItem="Pwi-gg-Ycu" secondAttribute="top" constant="10" id="25c-tI-iT7"/>
+                            <constraint firstItem="v76-ve-wcJ" firstAttribute="centerY" secondItem="Pwi-gg-Ycu" secondAttribute="centerY" id="45v-aE-mSr"/>
+                            <constraint firstItem="J3j-lx-dkG" firstAttribute="leading" secondItem="Pwi-gg-Ycu" secondAttribute="leading" constant="10" id="5Z8-Qq-LxW"/>
+                            <constraint firstAttribute="bottom" secondItem="J3j-lx-dkG" secondAttribute="bottom" constant="25" id="8gG-Ln-8lc"/>
+                            <constraint firstAttribute="trailing" secondItem="6hE-Nu-oX9" secondAttribute="trailing" constant="10" id="EFJ-Py-iO9"/>
+                            <constraint firstItem="osM-AV-h3g" firstAttribute="leading" secondItem="J3j-lx-dkG" secondAttribute="trailing" constant="5" id="Wvw-dM-8yc"/>
+                            <constraint firstAttribute="width" constant="304" id="X4d-Og-vtR"/>
+                            <constraint firstItem="v76-ve-wcJ" firstAttribute="centerX" secondItem="Pwi-gg-Ycu" secondAttribute="centerX" id="ZVa-rM-xXq"/>
+                            <constraint firstItem="osM-AV-h3g" firstAttribute="centerY" secondItem="J3j-lx-dkG" secondAttribute="centerY" id="j1G-Q5-gXg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="1" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.10000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Pwi-gg-Ycu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Tri-S0-CRI"/>
+                    <constraint firstItem="Pwi-gg-Ycu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tb8-4F-ZWW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cardBaseView" destination="Pwi-gg-Ycu" id="7zK-oo-mpY"/>
+                <outlet property="favBtn" destination="5Xf-Br-6vR" id="K6Y-hw-7X7"/>
+            </connections>
+            <point key="canvasLocation" x="136.23188405797103" y="143.97321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Fav" width="24" height="24"/>
+        <image name="Fav-choose" width="24" height="24"/>
+        <image name="Share" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

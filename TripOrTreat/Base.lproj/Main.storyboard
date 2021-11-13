@@ -21,9 +21,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="70"/>
+            <point key="canvasLocation" x="-793" y="70"/>
         </scene>
-        <!--Item-->
+        <!--首頁-->
         <scene sceneID="7AZ-2D-iuf">
             <objects>
                 <viewController storyboardIdentifier="Home" id="2ku-bc-BKI" customClass="HomeViewController" customModule="TripOrTreat" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,45 +31,167 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzH-87-nbc">
-                                <rect key="frame" x="181.5" y="433" width="51.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MenuBackgroudColor" translatesAutoresizingMaskIntoConstraints="NO" id="Vhw-fg-XE8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ly-jC-eBR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gmE-Z7-3g0">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="800"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="800" id="z7g-gv-S2k"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ps6-ge-dFd">
+                                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ps6-ge-dFd" id="6o2-5p-eks">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gmE-Z7-3g0" firstAttribute="bottom" secondItem="cJk-J3-93O" secondAttribute="bottom" constant="50" id="DXc-yY-0T1"/>
+                                    <constraint firstItem="gmE-Z7-3g0" firstAttribute="width" secondItem="c5a-qz-F7o" secondAttribute="width" id="Dvw-uM-PjB"/>
+                                    <constraint firstItem="gmE-Z7-3g0" firstAttribute="top" secondItem="cJk-J3-93O" secondAttribute="top" constant="50" id="flO-Ae-YF3"/>
+                                    <constraint firstItem="gmE-Z7-3g0" firstAttribute="leading" secondItem="cJk-J3-93O" secondAttribute="leading" id="up3-Dv-Gv1"/>
+                                    <constraint firstItem="gmE-Z7-3g0" firstAttribute="trailing" secondItem="cJk-J3-93O" secondAttribute="trailing" id="yI4-6P-xMM"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="cJk-J3-93O"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="c5a-qz-F7o"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bcs-ik-icb"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="uzH-87-nbc" firstAttribute="centerX" secondItem="L2u-Du-3Gg" secondAttribute="centerX" id="VQY-jL-8Gg"/>
-                            <constraint firstItem="uzH-87-nbc" firstAttribute="centerY" secondItem="L2u-Du-3Gg" secondAttribute="centerY" id="sHh-ic-Gio"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ly-jC-eBR" secondAttribute="bottom" id="7Sy-zq-PlQ"/>
+                            <constraint firstItem="4Ly-jC-eBR" firstAttribute="leading" secondItem="L2u-Du-3Gg" secondAttribute="leading" id="UKw-MY-loU"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ly-jC-eBR" secondAttribute="trailing" id="caA-md-m6r"/>
+                            <constraint firstItem="4Ly-jC-eBR" firstAttribute="top" secondItem="bcs-ik-icb" secondAttribute="top" id="dug-8r-vlN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="oMx-Po-cMw"/>
+                    <tabBarItem key="tabBarItem" title="首頁" image="home" id="oMx-Po-cMw">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="cardTable" destination="gmE-Z7-3g0" id="JLp-S6-bAM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXb-0x-b6U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1715.9420289855075" y="69.642857142857139"/>
+            <point key="canvasLocation" x="221.73913043478262" y="212.94642857142856"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--記帳-->
+        <scene sceneID="bfn-Df-Ezd">
+            <objects>
+                <viewController id="6nv-6d-J6i" customClass="TrackSpendingViewController" customModule="TripOrTreat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="suO-nu-E2C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8sP-0a-jhP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="記帳" image="trackSpending" id="Brh-EC-nNh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4n5-Dv-F5E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="213"/>
+        </scene>
+        <!--搜尋-->
+        <scene sceneID="gYC-bd-C2g">
+            <objects>
+                <viewController id="mL0-LV-UOT" customClass="SearchViewController" customModule="TripOrTreat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sX1-m8-rXR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HDV-FH-IjJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="搜尋" image="search" id="682-Zc-hsm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHI-mI-L0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2551" y="213"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="n3L-R7-2gq">
+            <objects>
+                <viewController id="3Rk-Sy-5dX" customClass="SettingViewController" customModule="TripOrTreat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kmJ-od-b3c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1F8-E0-57U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="設定" image="settings" id="BJy-Ry-dkk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7k5-2U-MZn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3341" y="213"/>
+        </scene>
+        <!--Tab Bar View Controller-->
         <scene sceneID="df8-DR-ghH">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ADn-kg-cjz" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ADn-kg-cjz" customClass="TabBarViewController" customModule="TripOrTreat" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iyM-dc-MCT">
+                    <tabBar key="tabBar" alpha="0.59999999999999998" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="iyM-dc-MCT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.22565641108247425" green="0.22565641108247425" blue="0.22565641108247425" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.17254901960784313" green="0.2627450980392157" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.094117647058823528" green="0.10588235294117647" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
+                        <outlet property="myTabBar" destination="iyM-dc-MCT" id="yzU-qx-wgx"/>
                         <segue destination="2ku-bc-BKI" kind="relationship" relationship="viewControllers" id="9SK-B6-bko"/>
+                        <segue destination="mL0-LV-UOT" kind="relationship" relationship="viewControllers" id="6D0-zp-W5L"/>
+                        <segue destination="6Pu-Il-ajt" kind="relationship" relationship="viewControllers" id="hkP-v2-Jmm"/>
+                        <segue destination="6nv-6d-J6i" kind="relationship" relationship="viewControllers" id="84l-WC-c4N"/>
+                        <segue destination="3Rk-Sy-5dX" kind="relationship" relationship="viewControllers" id="HJa-bx-4EC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcs-sT-cd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805.79710144927537" y="69.642857142857139"/>
+            <point key="canvasLocation" x="1783" y="-511"/>
+        </scene>
+        <!--Add New Trip View Controller-->
+        <scene sceneID="ioY-bj-cqr">
+            <objects>
+                <viewController id="6Pu-Il-ajt" customClass="AddNewTripViewController" customModule="TripOrTreat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w8o-Ql-fDS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fQn-3V-Z13"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="add" id="Nbe-W7-nOb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxg-21-GUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784" y="213"/>
         </scene>
     </scenes>
     <resources>
+        <image name="MenuBackgroudColor" width="706" height="1124"/>
+        <image name="add" width="50" height="50"/>
+        <image name="home" width="40" height="40"/>
+        <image name="search" width="40" height="40"/>
+        <image name="settings" width="40" height="40"/>
+        <image name="trackSpending" width="40" height="40"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

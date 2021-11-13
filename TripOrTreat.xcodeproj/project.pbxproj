@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		632BB6A4271C253300DBF54E /* flyVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 632BB6A3271C253300DBF54E /* flyVideo.mp4 */; };
+		63213B53273F8C52001FDA5F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63213B52273F8C52001FDA5F /* SearchViewController.swift */; };
+		63213B55273F8CA7001FDA5F /* AddNewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63213B54273F8CA7001FDA5F /* AddNewTripViewController.swift */; };
+		63213B57273F8E86001FDA5F /* TrackSpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63213B56273F8E86001FDA5F /* TrackSpendingViewController.swift */; };
+		63213B5A273F8F41001FDA5F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63213B59273F8F41001FDA5F /* SettingViewController.swift */; };
+		63213B5E273FA01D001FDA5F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63213B5D273FA01D001FDA5F /* TabBarViewController.swift */; };
+		63213B60273FC866001FDA5F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63213B5F273FC866001FDA5F /* Utility.swift */; };
+		63213B66273FD1DE001FDA5F /* TabBarItemBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63213B65273FD1DE001FDA5F /* TabBarItemBase.swift */; };
+		632773A0273FEB2500369189 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327739E273FEB2500369189 /* CardCell.swift */; };
+		632773A1273FEB2500369189 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6327739F273FEB2500369189 /* CardCell.xib */; };
 		632BB6A6271C342A00DBF54E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632BB6A5271C342A00DBF54E /* HomeViewController.swift */; };
 		6373224426DB7FF6003BC9CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373224326DB7FF6003BC9CC /* AppDelegate.swift */; };
-		6373224626DB7FF6003BC9CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373224526DB7FF6003BC9CC /* SceneDelegate.swift */; };
 		6373224826DB7FF6003BC9CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373224726DB7FF6003BC9CC /* ViewController.swift */; };
 		6373224B26DB7FF6003BC9CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6373224926DB7FF6003BC9CC /* Main.storyboard */; };
 		6373224D26DB7FF8003BC9CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6373224C26DB7FF8003BC9CC /* Assets.xcassets */; };
@@ -37,11 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		632BB6A3271C253300DBF54E /* flyVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = flyVideo.mp4; sourceTree = SOURCE_ROOT; };
+		63213B52273F8C52001FDA5F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		63213B54273F8CA7001FDA5F /* AddNewTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTripViewController.swift; sourceTree = "<group>"; };
+		63213B56273F8E86001FDA5F /* TrackSpendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSpendingViewController.swift; sourceTree = "<group>"; };
+		63213B59273F8F41001FDA5F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		63213B5D273FA01D001FDA5F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		63213B5F273FC866001FDA5F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		63213B65273FD1DE001FDA5F /* TabBarItemBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemBase.swift; sourceTree = "<group>"; };
+		6327739E273FEB2500369189 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		6327739F273FEB2500369189 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		632BB6A5271C342A00DBF54E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6373224026DB7FF6003BC9CC /* TripOrTreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripOrTreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6373224326DB7FF6003BC9CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6373224526DB7FF6003BC9CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6373224726DB7FF6003BC9CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6373224A26DB7FF6003BC9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6373224C26DB7FF8003BC9CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +94,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63213B58273F8E95001FDA5F /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				632BB6A5271C342A00DBF54E /* HomeViewController.swift */,
+				63213B52273F8C52001FDA5F /* SearchViewController.swift */,
+				63213B54273F8CA7001FDA5F /* AddNewTripViewController.swift */,
+				63213B56273F8E86001FDA5F /* TrackSpendingViewController.swift */,
+				63213B59273F8F41001FDA5F /* SettingViewController.swift */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		63213B67273FD88E001FDA5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63213B65273FD1DE001FDA5F /* TabBarItemBase.swift */,
+				63213B5F273FC866001FDA5F /* Utility.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63213B68273FD8A4001FDA5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6327739E273FEB2500369189 /* CardCell.swift */,
+				6327739F273FEB2500369189 /* CardCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63213B69273FD8B3001FDA5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6373224726DB7FF6003BC9CC /* ViewController.swift */,
+				63213B6A273FD8EB001FDA5F /* TabBar */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		63213B6A273FD8EB001FDA5F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				63213B5D273FA01D001FDA5F /* TabBarViewController.swift */,
+				63213B58273F8E95001FDA5F /* TabBarControllers */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		6373223726DB7FF6003BC9CC = {
 			isa = PBXGroup;
 			children = (
@@ -104,13 +166,12 @@
 			isa = PBXGroup;
 			children = (
 				6373224326DB7FF6003BC9CC /* AppDelegate.swift */,
-				6373224526DB7FF6003BC9CC /* SceneDelegate.swift */,
-				6373224726DB7FF6003BC9CC /* ViewController.swift */,
-				632BB6A3271C253300DBF54E /* flyVideo.mp4 */,
-				6373224926DB7FF6003BC9CC /* Main.storyboard */,
-				632BB6A5271C342A00DBF54E /* HomeViewController.swift */,
+				63213B69273FD8B3001FDA5F /* Controller */,
+				63213B68273FD8A4001FDA5F /* View */,
+				63213B67273FD88E001FDA5F /* Model */,
 				6373224C26DB7FF8003BC9CC /* Assets.xcassets */,
 				6373224E26DB7FF8003BC9CC /* LaunchScreen.storyboard */,
+				6373224926DB7FF6003BC9CC /* Main.storyboard */,
 				6373225126DB7FF8003BC9CC /* Info.plist */,
 			);
 			path = TripOrTreat;
@@ -238,9 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6373225026DB7FF8003BC9CC /* LaunchScreen.storyboard in Resources */,
-				632BB6A4271C253300DBF54E /* flyVideo.mp4 in Resources */,
 				6373224D26DB7FF8003BC9CC /* Assets.xcassets in Resources */,
 				6373224B26DB7FF6003BC9CC /* Main.storyboard in Resources */,
+				632773A1273FEB2500369189 /* CardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +326,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63213B5E273FA01D001FDA5F /* TabBarViewController.swift in Sources */,
+				63213B57273F8E86001FDA5F /* TrackSpendingViewController.swift in Sources */,
+				63213B60273FC866001FDA5F /* Utility.swift in Sources */,
 				6373224826DB7FF6003BC9CC /* ViewController.swift in Sources */,
 				6373224426DB7FF6003BC9CC /* AppDelegate.swift in Sources */,
-				6373224626DB7FF6003BC9CC /* SceneDelegate.swift in Sources */,
+				63213B53273F8C52001FDA5F /* SearchViewController.swift in Sources */,
+				63213B55273F8CA7001FDA5F /* AddNewTripViewController.swift in Sources */,
+				632773A0273FEB2500369189 /* CardCell.swift in Sources */,
+				63213B5A273F8F41001FDA5F /* SettingViewController.swift in Sources */,
 				632BB6A6271C342A00DBF54E /* HomeViewController.swift in Sources */,
+				63213B66273FD1DE001FDA5F /* TabBarItemBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
