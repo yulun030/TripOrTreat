@@ -9,8 +9,6 @@ import UIKit
 
 class TabBarViewController: UITabBarController,UITabBarControllerDelegate
 {
-
-
     @IBOutlet var myTabBar: UITabBar!
     var preItem = UITabBarItem()
     override func viewDidLoad()

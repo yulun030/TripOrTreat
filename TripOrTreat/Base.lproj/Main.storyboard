@@ -76,7 +76,7 @@
                             <constraint firstItem="4Ly-jC-eBR" firstAttribute="top" secondItem="bcs-ik-icb" secondAttribute="top" id="dug-8r-vlN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="首頁" image="home" id="oMx-Po-cMw">
+                    <tabBarItem key="tabBarItem" title="首頁" image="house.circle.fill" catalog="system" id="oMx-Po-cMw">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
@@ -97,7 +97,7 @@
                         <viewLayoutGuide key="safeArea" id="8sP-0a-jhP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="記帳" image="trackSpending" id="Brh-EC-nNh"/>
+                    <tabBarItem key="tabBarItem" title="記帳" image="dollarsign.circle.fill" catalog="system" id="Brh-EC-nNh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4n5-Dv-F5E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,7 +113,7 @@
                         <viewLayoutGuide key="safeArea" id="HDV-FH-IjJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="搜尋" image="search" id="682-Zc-hsm"/>
+                    <tabBarItem key="tabBarItem" title="搜尋" image="magnifyingglass.circle.fill" catalog="system" id="682-Zc-hsm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHI-mI-L0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,7 +129,7 @@
                         <viewLayoutGuide key="safeArea" id="1F8-E0-57U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="設定" image="settings" id="BJy-Ry-dkk"/>
+                    <tabBarItem key="tabBarItem" title="設定" image="gearshape.2.fill" catalog="system" id="BJy-Ry-dkk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7k5-2U-MZn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,7 +178,7 @@
                         <viewLayoutGuide key="safeArea" id="fQn-3V-Z13"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="add" id="Nbe-W7-nOb"/>
+                    <tabBarItem key="tabBarItem" title="" image="plus.circle.fill" catalog="system" id="Nbe-W7-nOb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qxg-21-GUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,11 +187,11 @@
     </scenes>
     <resources>
         <image name="MenuBackgroudColor" width="706" height="1124"/>
-        <image name="add" width="50" height="50"/>
-        <image name="home" width="40" height="40"/>
-        <image name="search" width="40" height="40"/>
-        <image name="settings" width="40" height="40"/>
-        <image name="trackSpending" width="40" height="40"/>
+        <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="gearshape.2.fill" catalog="system" width="128" height="100"/>
+        <image name="house.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
