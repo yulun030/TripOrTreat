@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 import AVKit
- 
+
 class ViewController: UIViewController
 {
     private let logoImageView:UIImageView = {
